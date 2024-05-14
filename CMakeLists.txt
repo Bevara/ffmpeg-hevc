@@ -12,11 +12,11 @@ SET(FF_SRC_HEVC
 )
 
 SET(FF_LIB_HEVC
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec/libavcodec.a
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavutil/libavutil.a
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat/libavformat.a
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavfilter/libavfilter.a
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswscale/libswscale.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavutil.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavfilter.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswscale.a
 )
 
 SET(FF_INCLUDE_HEVC
