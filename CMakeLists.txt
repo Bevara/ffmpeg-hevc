@@ -6,22 +6,22 @@ include(filters.cmake)
 add_definitions(-fpic)
 
 SET(FF_SRC_HEVC
-        ${CMAKE_SOURCE_DIR}/ff_dec-hevc.c
-        ${CMAKE_SOURCE_DIR}/ff_rescale-hevc.c
-        ${CMAKE_SOURCE_DIR}/ff_common.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/ff_dec-hevc.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/ff_rescale-hevc.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/ff_common.c
 )
 
 SET(FF_LIB_HEVC
-        ${CMAKE_SOURCE_DIR}/lib/libavcodec/libavcodec.a
-        ${CMAKE_SOURCE_DIR}/lib/libavutil/libavutil.a
-        ${CMAKE_SOURCE_DIR}/lib/libavformat/libavformat.a
-        ${CMAKE_SOURCE_DIR}/lib/libavfilter/libavfilter.a
-        ${CMAKE_SOURCE_DIR}/lib/libswscale/libswscale.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavcodec/libavcodec.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavutil/libavutil.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavformat/libavformat.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libavfilter/libavfilter.a
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libswscale/libswscale.a
 )
 
 SET(FF_INCLUDE_HEVC
-        ${CMAKE_SOURCE_DIR}/include/ffmpeg
-        ${CMAKE_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/ffmpeg
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 add_filter(ffmpeg-hevc
