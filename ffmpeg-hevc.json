@@ -12,5 +12,6 @@
         "ffdec-hevc" : "ff_dec-hevc.c",
         "ffsws-hevc" : "ff_rescale-hevc.c"
     },
-    "licence_required":true
+    "licence_required":true,
+    "Format": ["HEVC"]
 }
