@@ -9,6 +9,7 @@ SET(FF_SRC_HEVC
         ${CMAKE_CURRENT_SOURCE_DIR}/ff_dec-hevc.c
         ${CMAKE_CURRENT_SOURCE_DIR}/ff_rescale-hevc.c
         ${CMAKE_CURRENT_SOURCE_DIR}/ff_common.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/surface.c
 )
 
 SET(FF_LIB_HEVC
@@ -24,11 +25,16 @@ SET(FF_INCLUDE_HEVC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+SET(FF_FLAGS_HEVC
+      GPAC_HAS_FFMPEG
+      GPAC_DISABLE_EVG
+)
+
 add_filter(ffmpeg-hevc
         "${FF_SRC_HEVC}"
         "${FF_LIB_HEVC}"
         []
-        GPAC_HAS_FFMPEG
+        "${FF_FLAGS_HEVC}"
         "${FF_INCLUDE_HEVC}"
         ""
         "1")
