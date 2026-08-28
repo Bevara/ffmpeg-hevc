@@ -1526,3 +1526,8 @@ const GF_FilterRegister *dynCall_ffdec_flac_register(GF_FilterSession *session)
 }
 #endif
 
+#include "filter_register.h"
+__attribute__((constructor))
+void register_ffdec_hevc(void) {
+    gf_filter_auto_register("ffdec_hevc", dynCall_ffdec_flac_register);
+}

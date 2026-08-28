@@ -1103,3 +1103,8 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_ffsws_register(GF_FilterS
 #endif
 }
 
+#include "filter_register.h"
+__attribute__((constructor))
+void register_ffsws(void) {
+    gf_filter_auto_register("ffsws", dynCall_ffsws_register);
+}
