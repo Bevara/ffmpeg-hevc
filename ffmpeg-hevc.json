@@ -13,5 +13,6 @@
         "ffsws-hevc" : "ff_rescale-hevc.c"
     },
     "licence_required":true,
-    "Format": ["HEVC"]
+    "Format": ["HEVC"],
+    "using": ["solver_1"]
 }
