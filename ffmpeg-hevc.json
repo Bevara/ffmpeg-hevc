@@ -14,5 +14,23 @@
     },
     "licence_required":true,
     "Format": ["HEVC"],
-    "using": ["solver_1"]
+    "using": ["solver_1"],
+    "runtime": {
+        "ffdec-hevc": {
+            "outputs": [
+                {
+                    "property": "GF_PROP_PID_PIXFMT",
+                    "format": [
+                        "GF_PIXEL_GREYSCALE",
+                        "GF_PIXEL_YUV",
+                        "GF_PIXEL_YUV_10",
+                        "GF_PIXEL_YUV422",
+                        "GF_PIXEL_YUV422_10",
+                        "GF_PIXEL_YUV444",
+                        "GF_PIXEL_YUV444_10"
+                    ]
+                }
+            ]
+        }
+    }
 }
