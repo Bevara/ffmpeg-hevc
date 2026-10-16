@@ -12,7 +12,6 @@
         "ffdec-hevc" : "ff_dec-hevc.c",
         "ffsws-hevc" : "ff_rescale-hevc.c"
     },
-    "licence_required":true,
     "Format": ["HEVC"],
     "using": ["solver_1"],
     "runtime": {
@@ -32,5 +31,10 @@
                 }
             ]
         }
+    },
+    "patents": {
+        "status": "licence-required",
+        "note": "HEVC: Access Advance, Via LA and others",
+        "checked": "2026-10-16"
     }
 }
