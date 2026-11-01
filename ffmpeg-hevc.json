@@ -13,7 +13,7 @@
         "ffsws-hevc" : "ff_rescale-hevc.c"
     },
     "Format": ["HEVC"],
-    "using": ["solver_1"],
+    "using": ["mm_solver_1.0.1"],
     "runtime": {
         "ffdec-hevc": {
             "outputs": [
